@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le titre principal peut rester plus descriptif -->
     <title>Dave's Mexican Food Truck - Tacos & Burritos Authentiques à Bruxelles</title>
     <meta name="description" content="Dave's Mexican Food Truck : Tacos, Burritos, Quesadillas frais et savoureux à Bruxelles. Découvrez notre menu simple et authentique et trouvez-nous près de chez vous !">
 
@@ -14,13 +15,13 @@
     <link rel="preload" href="images/hero-background.webp" as="image">
 
     <!-- SEO / Social Meta Tags -->
-    <meta property="og:title" content="Dave's Truck - Bruxelles">
+    <meta property="og:title" content="Dave's Mexican Food Truck - Bruxelles">
     <meta property="og:description" content="Le meilleur de la street food mexicaine à Bruxelles : Tacos, Burritos, Quesadillas par Dave !">
     <meta property="og:image" content="images/og-image.png">
     <meta property="og:url" content="[URL_DE_VOTRE_SITE_SI_EXISTANT]">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fr_BE">
-    <meta property="og:site_name" content="Dave's Mexican Food Truck">
+    <meta property="og:site_name" content="Dave's Mexican Food Truck"> <!-- Garder le nom complet ici -->
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Dave's Mexican Food Truck - Bruxelles">
@@ -46,12 +47,12 @@
     <link rel="icon" href="images/favicon.png" type="image/png">
     <meta name="theme-color" content="#D93B00">
 
-    <!-- Schema.org Structured Data (JSON-LD) - Mis à jour pour Dave -->
+    <!-- Schema.org Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FoodTruck",
-      "name": "Dave's Mexican Food Truck",
+      "name": "Dave's Mexican Food Truck", // Garder le nom complet pour le SEO
       "description": "Food truck proposant une cuisine mexicaine simple et authentique (Tacos, Burritos, Quesadillas) à Bruxelles, préparée avec des ingrédients frais par Dave.",
       "image": "[URL_DE_VOTRE_SITE_SI_EXISTANT]/images/og-image.png",
       "url": "[URL_DE_VOTRE_SITE_SI_EXISTANT]",
@@ -59,18 +60,8 @@
       "email": "mailto:dave@mexicanfood.be",
       "servesCuisine": "Mexicaine",
       "priceRange": "€€",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bruxelles",
-        "addressRegion": "Région de Bruxelles-Capitale",
-        "postalCode": "1050",
-        "addressCountry": "BE"
-      },
-      "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "50.8295",
-          "longitude": "4.3715"
-      },
+      "address": { "@type": "PostalAddress", "addressLocality": "Bruxelles", "addressRegion": "Région de Bruxelles-Capitale", "postalCode": "1050", "addressCountry": "BE" },
+      "geo": { "@type": "GeoCoordinates", "latitude": "50.8295", "longitude": "4.3715" },
       "openingHoursSpecification": [
         { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday"], "opens": "11:30", "closes": "14:30", "description": "Quartier Européen (Place Schuman Area)" },
         { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday"], "opens": "11:30", "closes": "14:30", "description": "Place Flagey, Ixelles" },
@@ -100,7 +91,9 @@
     <!-- ===== En-tête ===== -->
     <header class="header" id="header">
         <nav class="navbar container">
-            <a href="#hero" class="logo">Dave's Mexican Food Truck 🌶️</a>
+            <!-- ****** MODIFICATION ICI ****** -->
+            <a href="#hero" class="logo">Dave's Truck 🌶️</a>
+            <!-- ****** FIN MODIFICATION ****** -->
             <div class="nav-menu" id="nav-menu" tabindex="-1">
                 <ul class="nav-list" role="menu">
                     <li class="nav-item" role="none"><a href="#menu" class="nav-link" role="menuitem">Menu</a></li>
@@ -175,19 +168,15 @@
                             <a href="[URL_INSTAGRAM_REEL]" target="_blank" rel="noopener noreferrer" aria-label="Suivez Dave's Mexican Food Truck sur Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <!-- === Section Carte Remplacée par Image Cliquable === -->
                     <div class="location-map-image animate-on-scroll">
                         <a href="https://www.google.com/maps/search/?api=1&query=Place+Flagey%2C+Ixelles%2C+Belgium" target="_blank" rel="noopener noreferrer" aria-label="Voir Place Flagey sur Google Maps (nouvel onglet)">
                             <picture>
-                                <!-- Optionnel: ajoutez un .webp si vous créez une version webp de votre capture -->
-                                <!-- <source srcset="images/map-placeholder.webp" type="image/webp"> -->
                                 <img src="images/map-placeholder.png" alt="Carte indiquant la zone de Place Flagey à Ixelles, Bruxelles" loading="lazy" class="map-image-placeholder">
-                                <!-- !! IMPORTANT !! Remplacez map-placeholder.png par le nom de votre fichier image carte -->
+                                <!-- Assurez-vous d'avoir créé images/map-placeholder.png -->
                             </picture>
                         </a>
                         <p class="map-caption">Exemple : Place Flagey, Ixelles. Cliquez pour voir sur Google Maps. Consultez le planning pour l'emplacement exact !</p>
                     </div>
-                     <!-- === Fin Section Carte Remplacée === -->
                 </div>
             </section>
 
