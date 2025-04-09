@@ -1,0 +1,23 @@
+Créez les images nécessaires (ou utilisez des placeholders) dans votre dossier images/ :
+
+    hero-background.png
+
+    tacos.png, burrito.png, quesadilla.png, guacamole.png
+
+    food-truck.png
+
+    client1.png, client2.png, client3.png (pour les témoignages)
+
+    gallery1.png à gallery6.png : images d'illustration du footruck en situation
+
+    favicon.png (petite icône pour l'onglet du navigateur)
+
+    og-image.png (image pour le partage sur les réseaux sociaux, typiquement 1200x630px)
+
+
+
+Personnalisez le contenu : Remplacez les textes placeholders comme [Votre Ville], [URL_DE_VOTRE_SITE], les textes de témoignages, les détails du planning, etc., par vos informations réelles.
+
+
+et surtout vérifiez/complétez les données Schema.org. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+créer API googlemaps !!!!!!!!!!!!!!!!!!!!!!!!

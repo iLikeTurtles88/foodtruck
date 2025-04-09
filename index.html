@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave's Mexican Food Truck - Tacos & Burritos Authentiques à Bruxelles</title>
+    <meta name="description" content="Dave's Mexican Food Truck : Tacos, Burritos, Quesadillas frais et savoureux à Bruxelles. Découvrez notre menu simple et authentique et trouvez-nous près de chez vous !">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;600&display=swap" as="style" crossorigin="anonymous">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" crossorigin="anonymous">
+    <link rel="preload" href="images/hero-background.webp" as="image">
+
+    <!-- SEO / Social Meta Tags -->
+    <meta property="og:title" content="Dave's Mexican Food Truck - Bruxelles">
+    <meta property="og:description" content="Le meilleur de la street food mexicaine à Bruxelles : Tacos, Burritos, Quesadillas par Dave !">
+    <meta property="og:image" content="images/og-image.png">
+    <meta property="og:url" content="[URL_DE_VOTRE_SITE_SI_EXISTANT]">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_BE">
+    <meta property="og:site_name" content="Dave's Mexican Food Truck">
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dave's Mexican Food Truck - Bruxelles">
+    <meta name="twitter:description" content="Tacos, Burritos, Quesadillas authentiques faits avec passion par Dave. Trouvez-nous à Bruxelles !">
+    <meta name="twitter:image" content="images/og-image.png">
+    <!-- <meta name="twitter:site" content="@VotreCompteTwitter"> -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- BasicLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css" integrity="sha256-etUhqj5kfGk7S2Kf3+DOCFKjKjPZ8Y/h7K3x/LBYyWs=" crossorigin="anonymous">
+
+    <!-- Votre Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <meta name="theme-color" content="#D93B00">
+
+    <!-- Schema.org Structured Data (JSON-LD) - Mis à jour pour Dave -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FoodTruck",
+      "name": "Dave's Mexican Food Truck",
+      "description": "Food truck proposant une cuisine mexicaine simple et authentique (Tacos, Burritos, Quesadillas) à Bruxelles, préparée avec des ingrédients frais par Dave.",
+      "image": "[URL_DE_VOTRE_SITE_SI_EXISTANT]/images/og-image.png",
+      "url": "[URL_DE_VOTRE_SITE_SI_EXISTANT]",
+      "telephone": "+32400123456",
+      "email": "mailto:dave@mexicanfood.be",
+      "servesCuisine": "Mexicaine",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bruxelles",
+        "addressRegion": "Région de Bruxelles-Capitale",
+        "postalCode": "1050",
+        "addressCountry": "BE"
+      },
+      "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "50.8295",
+          "longitude": "4.3715"
+      },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday"], "opens": "11:30", "closes": "14:30", "description": "Quartier Européen (Place Schuman Area)" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday"], "opens": "11:30", "closes": "14:30", "description": "Place Flagey, Ixelles" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday"], "opens": "00:00", "closes": "00:00", "description": "Repos / Préparation" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Thursday"], "opens": "11:30", "closes": "14:30", "description": "Parvis de Saint-Gilles" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday"], "opens": "11:30", "closes": "15:00", "description": "Place Flagey, Ixelles" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "12:00", "closes": "19:00", "description": "Événement spécial / Marché (variable)" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "10:00", "closes": "15:00", "description": "Marché du Midi (Gare du Midi)" }
+      ],
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Menu Dave's Mexican Food Truck",
+        "hasMenuItem": [
+           { "@type": "MenuItem", "name": "Tacos Savoureux (x3)", "description": "Viande savoureuse (boeuf ou poulet selon arrivage), légumes frais, coriandre, sur tortilla de maïs.", "offers": { "@type": "Offer", "price": "9.00", "priceCurrency": "EUR" } },
+           { "@type": "MenuItem", "name": "Burrito Classique", "description": "Généreusement garni de viande, riz, haricots, légumes frais et sauce maison.", "offers": { "@type": "Offer", "price": "11.00", "priceCurrency": "EUR" } },
+           { "@type": "MenuItem", "name": "Quesadilla Fromage Dorée", "description": "Tortilla de blé grillée, fromage fondant, servie simple ou avec supplément viande.", "offers": { "@type": "Offer", "price": "8.00", "priceCurrency": "EUR" } }
+        ]
+      },
+      "acceptsReservations": "False"
+    }
+    </script>
+
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- ===== En-tête ===== -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="#hero" class="logo">Dave's Mexican Food Truck 🌶️</a>
+            <div class="nav-menu" id="nav-menu" tabindex="-1">
+                <ul class="nav-list" role="menu">
+                    <li class="nav-item" role="none"><a href="#menu" class="nav-link" role="menuitem">Menu</a></li>
+                    <li class="nav-item" role="none"><a href="#location" class="nav-link" role="menuitem">Où nous trouver</a></li>
+                    <li class="nav-item" role="none"><a href="#about" class="nav-link" role="menuitem">L'Histoire</a></li>
+                    <li class="nav-item" role="none"><a href="#gallery" class="nav-link" role="menuitem">Galerie</a></li>
+                    <li class="nav-item" role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+                </ul>
+                <button class="nav-close" id="nav-close" aria-label="Fermer le menu">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-haspopup="true" aria-controls="nav-menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- ===== Section Héros ===== -->
+        <section id="hero" class="hero-section section" role="region" aria-labelledby="hero-title">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <h1 id="hero-title" class="hero-title">Authentique Goût Mexicain, <span class="highlight">Directement à Bruxelles !</span></h1>
+                <p class="hero-subtitle">Tacos, Burritos & Quesadillas préparés avec passion par Dave. Simple, frais et délicieux !</p>
+                <a href="#location" class="btn btn-primary btn-lg pulse">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Où Manger Aujourd'hui ?
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== Section Menu ===== -->
+        <section id="menu" class="menu-section section section-padding" role="region" aria-labelledby="menu-title-h2">
+            <div class="container">
+                <h2 id="menu-title-h2" class="section-title">Notre Menu <span class="highlight">Simple & Savoureux</span></h2>
+                <p class="section-subtitle">Inspiré par la street food mexicaine authentique. Fraîcheur garantie !</p>
+                <div class="menu-grid">
+                    <article class="menu-item animate-on-scroll">
+                        <picture> <source srcset="images/tacos.webp" type="image/webp"> <img src="images/tacos.png" alt="Tacos frais et garnis servis par Dave's Mexican Food Truck" class="menu-item-img" loading="lazy" width="600" height="400"> </picture>
+                        <div class="menu-item-content"> <h3 class="menu-item-title">Tacos Savoureux (x3) <span class="menu-icon"><i class="fas fa-utensils"></i></span></h3> <p class="menu-item-description">Viande savoureuse (boeuf ou poulet selon arrivage), légumes frais, coriandre, sur tortilla de maïs.</p> <p class="menu-item-price">9€</p> </div> </article>
+                    <article class="menu-item animate-on-scroll">
+                         <picture> <source srcset="images/burrito.webp" type="image/webp"> <img src="images/burrito.png" alt="Burrito classique généreusement garni" class="menu-item-img" loading="lazy" width="600" height="400"> </picture>
+                        <div class="menu-item-content"> <h3 class="menu-item-title">Burrito Classique <span class="menu-icon"><i class="fas fa-utensils"></i></span></h3> <p class="menu-item-description">Généreusement garni de viande, riz, haricots, légumes frais et sauce maison.</p> <p class="menu-item-price">11€</p> </div> </article>
+                    <article class="menu-item animate-on-scroll">
+                         <picture> <source srcset="images/quesadilla.webp" type="image/webp"> <img src="images/quesadilla.png" alt="Quesadilla dorée au fromage fondant" class="menu-item-img" loading="lazy" width="600" height="400"> </picture>
+                        <div class="menu-item-content"> <h3 class="menu-item-title">Quesadilla Fromage Dorée <span class="menu-icon" aria-label="Option Végétarienne"><i class="fas fa-cheese"></i></span></h3> <p class="menu-item-description">Tortilla de blé grillée, fromage fondant. Simple et réconfortant ! (Option viande dispo).</p> <p class="menu-item-price">8€</p> </div> </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Section Où nous trouver ===== -->
+        <section id="location" class="location-section section section-padding bg-light" role="region" aria-labelledby="location-title-h2">
+            <div class="container">
+                <h2 id="location-title-h2" class="section-title">Où Trouver <span class="highlight">Dave Aujourd'hui</span> ?</h2>
+                <div class="location-content">
+                    <div class="location-text animate-on-scroll">
+                        <h3><i class="fas fa-map-pin" aria-hidden="true"></i> Emplacement du Jour :</h3>
+                        <p id="current-location" class="location-today">Chargement de l'emplacement...</p>
+                        <h4><i class="fas fa-calendar-alt" aria-hidden="true"></i> Notre Planning Bruxellois (Indicatif) :</h4>
+                        <ul class="location-schedule">
+                            <li><strong>Lundi :</strong> Quartier EU (Schuman) (11h30 - 14h30)</li>
+                            <li><strong>Mardi :</strong> Place Flagey, Ixelles (11h30 - 14h30)</li>
+                            <li><strong>Mercredi :</strong> <span class="closed">Repos / Préparation</span></li>
+                            <li><strong>Jeudi :</strong> Parvis de Saint-Gilles (11h30 - 14h30)</li>
+                            <li><strong>Vendredi :</strong> Place Flagey, Ixelles (11h30 - 15h00)</li>
+                            <li><strong>Samedi :</strong> Événements / Marché (Variable - Voir <a href="[URL_INSTAGRAM_REEL]" target="_blank" rel="noopener noreferrer">Instagram</a> !)</li>
+                            <li><strong>Dimanche :</strong> Marché du Midi (Gare) (10h00 - 15h00)</li>
+                        </ul>
+                        <p>Pour être sûr de nous trouver, suivez-moi sur les réseaux !</p>
+                        <div class="social-links">
+                            <a href="[URL_FACEBOOK_REEL]" target="_blank" rel="noopener noreferrer" aria-label="Suivez Dave's Mexican Food Truck sur Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="[URL_INSTAGRAM_REEL]" target="_blank" rel="noopener noreferrer" aria-label="Suivez Dave's Mexican Food Truck sur Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <!-- === Section Carte Remplacée par Image Cliquable === -->
+                    <div class="location-map-image animate-on-scroll">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Place+Flagey%2C+Ixelles%2C+Belgium" target="_blank" rel="noopener noreferrer" aria-label="Voir Place Flagey sur Google Maps (nouvel onglet)">
+                            <picture>
+                                <!-- Optionnel: ajoutez un .webp si vous créez une version webp de votre capture -->
+                                <!-- <source srcset="images/map-placeholder.webp" type="image/webp"> -->
+                                <img src="images/map-placeholder.png" alt="Carte indiquant la zone de Place Flagey à Ixelles, Bruxelles" loading="lazy" class="map-image-placeholder">
+                                <!-- !! IMPORTANT !! Remplacez map-placeholder.png par le nom de votre fichier image carte -->
+                            </picture>
+                        </a>
+                        <p class="map-caption">Exemple : Place Flagey, Ixelles. Cliquez pour voir sur Google Maps. Consultez le planning pour l'emplacement exact !</p>
+                    </div>
+                     <!-- === Fin Section Carte Remplacée === -->
+                </div>
+            </section>
+
+        <!-- ===== Section À Propos ===== -->
+        <section id="about" class="about-section section section-padding" role="region" aria-labelledby="about-title-h2">
+            <div class="container">
+                 <div class="about-content">
+                     <div class="about-text animate-on-scroll">
+                        <h2 id="about-title-h2" class="section-title text-left">L'Histoire de <span class="highlight">Dave & son Camion</span></h2>
+                        <p>Salut ! Moi, c'est Dave. Il y a quelques années, un voyage au Mexique a changé ma vie. Pas seulement les paysages magnifiques, mais surtout l'explosion de saveurs de la vraie cuisine de rue : les tacos simples et parfaits, les burritos généreux, les quesadillas réconfortantes...</p>
+                        <p>De retour à Bruxelles, cette passion ne m'a plus quitté. J'ai décidé de troquer mon ancien job pour la chaleur de la cuisine et la liberté de la route. J'ai retapé ce vieux camion orange vif et j'ai mis tout mon cœur à recréer ces goûts authentiques qui m'avaient tant marqué.</p>
+                        <p>Ma mission ? Vous offrir un bout de Mexique ici, à Bruxelles. Des ingrédients frais, des recettes simples mais pleines de goût, et toujours un sourire. Venez me dire bonjour, goûtez la différence !</p>
+                     </div>
+                     <div class="about-image animate-on-scroll">
+                         <picture> <source srcset="images/food-truck.webp" type="image/webp"> <img src="images/food-truck.png" alt="Dave souriant depuis la fenêtre de son food truck orange vif 'Mexican Food'." loading="lazy" width="600" height="450"> </picture>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- ===== Section Galerie ===== -->
+        <section id="gallery" class="gallery-section section section-padding" role="region" aria-labelledby="gallery-title-h2">
+            <div class="container">
+                <h2 id="gallery-title-h2" class="section-title">Le Camion et les Plats <span class="highlight">en Photos</span></h2>
+                <p class="section-subtitle">Un aperçu de ce qui vous attend ! Cliquez pour agrandir.</p>
+                <div class="gallery-grid">
+                    <a href="images/gallery1.png" class="gallery-item animate-on-scroll" data-alt="Assortiment de plats mexicains servis par le food truck"> <picture> <source srcset="images/gallery1.webp" type="image/webp"> <img src="images/gallery1.png" alt="Plats mexicains variés" loading="lazy" width="400" height="300"> </picture> </a>
+                    <a href="images/gallery6.png" class="gallery-item animate-on-scroll" data-alt="Le food truck orange vif de Dave en situation"> <picture> <source srcset="images/gallery6.webp" type="image/webp"> <img src="images/gallery6.png" alt="Le food truck orange de Dave" loading="lazy" width="400" height="300"> </picture> </a>
+                    <a href="images/tacos.png" class="gallery-item animate-on-scroll" data-alt="Gros plan sur les tacos savoureux"> <picture> <source srcset="images/tacos.webp" type="image/webp"> <img src="images/tacos.png" alt="Tacos savoureux" loading="lazy" width="400" height="300"> </picture> </a>
+                    <a href="images/burrito.png" class="gallery-item animate-on-scroll" data-alt="Deux burritos appétissants prêts à être dégustés"> <picture> <source srcset="images/burrito.webp" type="image/webp"> <img src="images/burrito.png" alt="Burritos appétissants" loading="lazy" width="400" height="300"> </picture> </a>
+                    <a href="images/quesadilla.png" class="gallery-item animate-on-scroll" data-alt="Quesadilla dorée et coupée en parts"> <picture> <source srcset="images/quesadilla.webp" type="image/webp"> <img src="images/quesadilla.png" alt="Quesadilla dorée" loading="lazy" width="400" height="300"> </picture> </a>
+                    <a href="images/food-truck.png" class="gallery-item animate-on-scroll" data-alt="Dave dans son food truck 'Mexican Food'"> <picture> <source srcset="images/food-truck.webp" type="image/webp"> <img src="images/food-truck.png" alt="Dave dans son camion" loading="lazy" width="400" height="300"> </picture> </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Section Contact ===== -->
+        <section id="contact" class="contact-section section section-padding bg-light" role="region" aria-labelledby="contact-title-h2">
+            <div class="container">
+                <h2 id="contact-title-h2" class="section-title">Contacter <span class="highlight">Dave</span></h2>
+                <p class="section-subtitle">Une question ? Une suggestion ? Envie de privatiser le camion pour un événement ?</p>
+                <div class="contact-content">
+                    <div class="contact-info animate-on-scroll">
+                        <h3><i class="fas fa-info-circle" aria-hidden="true"></i> Infos Pratiques</h3>
+                        <p><i class="fas fa-phone fa-fw" aria-hidden="true"></i> <a href="tel:+32400123456">0400 12 34 56</a> (Infos & Résa Événement)</p>
+                        <p><i class="fas fa-envelope fa-fw" aria-hidden="true"></i> <a href="mailto:dave@mexicanfood.be">dave@mexicanfood.be</a></p>
+                        <p><i class="fas fa-map-marker-alt fa-fw" aria-hidden="true"></i> Food Truck mobile à Bruxelles (voir planning).</p>
+                        <h3><i class="fas fa-share-alt" aria-hidden="true"></i> Suivez-moi !</h3>
+                         <div class="social-links">
+                            <a href="[URL_FACEBOOK_REEL]" target="_blank" rel="noopener noreferrer" aria-label="Suivez Dave's Mexican Food Truck sur Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="[URL_INSTAGRAM_REEL]" target="_blank" rel="noopener noreferrer" aria-label="Suivez Dave's Mexican Food Truck sur Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                         </div>
+                    </div>
+                    <div class="contact-form-container animate-on-scroll">
+                        <h3><i class="fas fa-paper-plane" aria-hidden="true"></i> Envoyez un Message</h3>
+                        <form id="contact-form" class="contact-form" novalidate action="[URL_POUR_TRAITER_LE_FORMULAIRE_SI_BESOIN]" method="POST">
+                             <div class="form-group sr-only" aria-hidden="true"> <label for="website-url">Ne pas remplir</label> <input type="text" id="website-url" name="website-url" tabindex="-1" autocomplete="off"> </div>
+                             <div class="form-group"> <label for="name">Nom <span class="required" aria-hidden="true">*</span></label> <input type="text" id="name" name="name" required placeholder="Votre nom complet" autocomplete="name" aria-required="true" aria-invalid="false" aria-describedby="form-status"> </div>
+                            <div class="form-group"> <label for="email">Email <span class="required" aria-hidden="true">*</span></label> <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com" autocomplete="email" aria-required="true" aria-invalid="false" aria-describedby="form-status"> </div>
+                            <div class="form-group"> <label for="subject">Sujet</label> <input type="text" id="subject" name="subject" placeholder="Ex: Devis privatisation, Question..." aria-invalid="false" aria-describedby="form-status"> </div>
+                            <div class="form-group"> <label for="message">Message <span class="required" aria-hidden="true">*</span></label> <textarea id="message" name="message" rows="5" required placeholder="Écrivez votre message ici..." aria-required="true" aria-invalid="false" aria-describedby="form-status"></textarea> </div>
+                            <button type="submit" class="btn btn-primary"> <i class="fas fa-check" aria-hidden="true"></i> Envoyer le message </button>
+                             <p id="form-status" class="form-status" role="alert" aria-live="assertive"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Pied de Page ===== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h4 class="footer-title">Dave's Mexican Food Truck</h4>
+                <p>Authentique Street Food Mexicaine à Bruxelles.</p>
+                <div class="social-links-footer">
+                     <a href="[URL_FACEBOOK_REEL]" target="_blank" rel="noopener noreferrer" aria-label="Suivez Dave's Mexican Food Truck sur Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="[URL_INSTAGRAM_REEL]" target="_blank" rel="noopener noreferrer" aria-label="Suivez Dave's Mexican Food Truck sur Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                 <h4 class="footer-title">Navigation</h4>
+                 <ul role="list"> <li><a href="#menu">Menu</a></li> <li><a href="#location">Emplacements</a></li> <li><a href="#about">L'Histoire</a></li> <li><a href="#gallery">Galerie</a></li> <li><a href="#contact">Contact</a></li> </ul>
+            </div>
+             <div class="footer-col">
+                 <h4 class="footer-title">Infos</h4>
+                  <ul role="list"> <li><a href="#legal">Mentions Légales</a></li> <li><a href="#privacy">Vie Privée</a></li> <li><a href="#cookies">Cookies</a></li> </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="current-year"></span> Dave's Mexican Food Truck. Tous droits réservés.</p>
+            <p>Food Truck basé à Bruxelles, Belgique.</p>
+        </div>
+    </footer>
+
+    <!-- ===== Bouton Retour en Haut ===== -->
+    <a href="#" class="back-to-top" id="back-to-top" aria-label="Retour en haut de la page" title="Retour en haut"> <i class="fas fa-arrow-up" aria-hidden="true"></i> </a>
+
+    <!-- BasicLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js" integrity="sha256-nMn34BfOxpKD0GwVTP3RKTrGlKZEo8cARzMMcSOeaUU=" crossorigin="anonymous"></script>
+    <!-- Votre Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
